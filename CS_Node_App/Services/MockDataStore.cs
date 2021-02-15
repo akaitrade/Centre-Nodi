@@ -118,7 +118,7 @@ namespace CS_Node_App.Services
                 var url = "https://monitor.credits.com/CreditsNetwork/Api/GetNodesData?page=1&limit=100";
                 var result_data = _download_serialized_json_data<Root>(url);
                 var nodelist = result_data.nodes;
-                var currentpage = 1;
+                var currentpage = 1; 
                 if (result_data.haveNextPage)
                 {
                     currentpage = 2;
