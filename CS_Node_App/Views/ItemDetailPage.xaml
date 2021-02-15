@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             BackgroundColor="#2a4d69"
+             x:Class="CS_Node_App.Views.ItemDetailPage" Title="{Binding Title}">
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="PublicKey:" FontSize="Medium" />
+        <Label Text="{Binding Item.Text}" FontSize="Small" />
+        <Label Text="Country:" FontSize="Medium" />
+        <Label Text="{Binding Item.Description}" FontSize="Small" />
+        <microcharts:ChartView x:Name="chartView" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+        
+    </StackLayout>
+</ContentPage>
